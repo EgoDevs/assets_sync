@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["ES2019", "DOM"],
+    "strict": true,
+    "module": "commonjs", //ii
+    "target": "es2018", //ii
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "outDir": "/",
+    "rootDir": ".",
+    "importHelpers": true,
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "baseUrl": "./",
+    "paths": {
+      "@tests/*":["tests/*"],
+      "@scripts/*":["scripts/*"],
+      "@src/*": ["src/*"]
+    },
+    "noImplicitAny": false,
+    "downlevelIteration": true
+  },
+  "include": [
+    "src/**/*", 
+    "tests/**/*", 
+    "scripts/**/*",
+    "idls/**/*",
+  ],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "es",
+    "dist",
+    "test",
+    "docs",
+    "tests",
+    "src/**/*.test.ts",
+    "**/canisters",
+    "webpack.config.js",
+    "*.js",
+    "scripts/**/*",
+  ]
+}
