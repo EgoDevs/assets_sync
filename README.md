@@ -30,14 +30,7 @@ NODE_ENV=production node dist/index.js --download --from=q3fc5-haaaa-aaaaa-aaahq
 ## sync
 
 ```bash
-node dist/index.js --sync --to=q3fc5-haaaa-aaaaa-aaahq-cai
-```
+node dist/index.js --sync --to=q3fc5-haaaa-aaaaa-aaahq-cai # local
 
-## live
-
-added `NODE_ENV=production` before script
-like:
-
-```bash
-NODE_ENV=production node dist/index.js --download --from=q3fc5-haaaa-aaaaa-aaahq-cai
+NODE_ENV=production node dist/index.js --sync --to=q3fc5-haaaa-aaaaa-aaahq-cai # production
 ```
