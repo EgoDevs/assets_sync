@@ -13,6 +13,24 @@ Syncing script used for assets_canister
 pnpm script:bootstrap
 ```
 
+## Usage
+
+```bash
+# after bootstrap
+node dist/index.js -h # show help
+
+Options
+      --version    show version                                         [boolean]
+      --from       sync from canister id                                [string]
+      --to         sync to canister id                                  [string]
+      --saveTo     save saveTo to                                       [string, default to `./sync_folder`]
+      --principal  get principal from pem                               [boolean]
+      --download   download                                             [boolean]
+      --sync       sync                                                 [boolean]
+  -h, --help       show help                                            [boolean]
+
+```
+
 ## principal
 
 ```bash
