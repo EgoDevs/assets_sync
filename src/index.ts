@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs, { rmSync } from 'fs';
 import shell from 'shelljs';
 import {
   argv,
@@ -84,6 +84,10 @@ if ((argv as ThisArgv).download) {
 }
 
 if ((argv as ThisArgv).sync) {
+  // remove .gitkeep
+  if (fs.existsSync(`${process.cwd()}/${saveTo.replace('./', '')}/.gitkeep`)) {
+    rmSync(`${process.cwd()}/${saveTo.replace('./', '')}/.gitkeep`);
+  }
   sync();
 }
 
